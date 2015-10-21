@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		424F42DB1BD7AAB90069EF06 /* AtkMaw.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 424F42DA1BD7AAB90069EF06 /* AtkMaw.bundle */; settings = {ASSET_TAGS = (); }; };
+		42EBDF131BD79CEA00B886B7 /* add-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEEF1BD79CEA00B886B7 /* add-btn.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF141BD79CEA00B886B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EBDEF11BD79CEA00B886B7 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		42EBDF151BD79CEA00B886B7 /* archive.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEF21BD79CEA00B886B7 /* archive.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF161BD79CEA00B886B7 /* camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEF31BD79CEA00B886B7 /* camera-icon.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF171BD79CEA00B886B7 /* classIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEF41BD79CEA00B886B7 /* classIcon.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF191BD79CEA00B886B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEF71BD79CEA00B886B7 /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF1A1BD79CEA00B886B7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEF81BD79CEA00B886B7 /* Default.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF1B1BD79CEA00B886B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEF91BD79CEA00B886B7 /* Default@2x.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF1C1BD79CEA00B886B7 /* document.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEFA1BD79CEA00B886B7 /* document.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF1D1BD79CEA00B886B7 /* email-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEFB1BD79CEA00B886B7 /* email-icon.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF1E1BD79CEA00B886B7 /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEFC1BD79CEA00B886B7 /* email.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF1F1BD79CEA00B886B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEFD1BD79CEA00B886B7 /* InfoPlist.strings */; settings = {ASSET_TAGS = (); }; };
+		42EBDF201BD79CEA00B886B7 /* file-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEFF1BD79CEA00B886B7 /* file-icon.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF211BD79CEA00B886B7 /* handwriting1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDF001BD79CEA00B886B7 /* handwriting1.jpg */; settings = {ASSET_TAGS = (); }; };
+		42EBDF221BD79CEA00B886B7 /* home-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDF011BD79CEA00B886B7 /* home-icon.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF241BD79CEA00B886B7 /* image_sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDF041BD79CEA00B886B7 /* image_sample.jpg */; settings = {ASSET_TAGS = (); }; };
+		42EBDF251BD79CEA00B886B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDF051BD79CEA00B886B7 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		42EBDF261BD79CEA00B886B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EBDF061BD79CEA00B886B7 /* main.m */; settings = {ASSET_TAGS = (); }; };
+		42EBDF271BD79CEA00B886B7 /* multiple.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDF071BD79CEA00B886B7 /* multiple.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF281BD79CEA00B886B7 /* printer.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDF081BD79CEA00B886B7 /* printer.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF291BD79CEA00B886B7 /* math-ak.res in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDF0B1BD79CEA00B886B7 /* math-ak.res */; settings = {ASSET_TAGS = (); }; };
+		42EBDF2A1BD79CEA00B886B7 /* math-grm-maw.def in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDF0C1BD79CEA00B886B7 /* math-grm-maw.def */; settings = {ASSET_TAGS = (); }; };
+		42EBDF2B1BD79CEA00B886B7 /* math-grm-maw.res in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDF0D1BD79CEA00B886B7 /* math-grm-maw.res */; settings = {ASSET_TAGS = (); }; };
+		42EBDF2C1BD79CEA00B886B7 /* Save.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDF0E1BD79CEA00B886B7 /* Save.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF2D1BD79CEA00B886B7 /* sub.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDF0F1BD79CEA00B886B7 /* sub.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF2E1BD79CEA00B886B7 /* Tablet Teacher-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDF101BD79CEA00B886B7 /* Tablet Teacher-Info.plist */; settings = {ASSET_TAGS = (); }; };
+		42EBDF2F1BD79CEA00B886B7 /* uploadWorksheet-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDF121BD79CEA00B886B7 /* uploadWorksheet-icon.png */; settings = {ASSET_TAGS = (); }; };
+		42EBDF341BD79D0300B886B7 /* CreateWorksheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EBDF311BD79D0300B886B7 /* CreateWorksheetViewController.m */; settings = {ASSET_TAGS = (); }; };
+		42EBDF351BD79D0300B886B7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EBDF331BD79D0300B886B7 /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		42F37C4E1BD0CBC40060497C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F37C4D1BD0CBC40060497C /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		42F37C7C1BD12AF40060497C /* ArchiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F37C7B1BD12AF40060497C /* ArchiveViewController.m */; settings = {ASSET_TAGS = (); }; };
+		42F37C7F1BD4B9030060497C /* SPUserResizableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F37C7D1BD4B9030060497C /* SPUserResizableView.m */; settings = {ASSET_TAGS = (); }; };
+		42F37C841BD4C1400060497C /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F37C831BD4C1400060497C /* QuestionView.xib */; settings = {ASSET_TAGS = (); }; };
+		42F37C891BD4C3180060497C /* QuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F37C881BD4C3180060497C /* QuestionView.m */; settings = {ASSET_TAGS = (); }; };
+		9297189219D9A2250008F6AE /* libMyScript2D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9297188A19D9A2250008F6AE /* libMyScript2D.a */; };
+		9297189419D9A2250008F6AE /* libMyScriptEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9297188C19D9A2250008F6AE /* libMyScriptEngine.a */; };
+		9297189B19D9A2E80008F6AE /* libStylusCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9297189A19D9A2E80008F6AE /* libStylusCore.a */; };
+		F44D16521785B15D0043785E /* AtkMaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44D16511785B15D0043785E /* AtkMaw.framework */; };
+		F463D0601A40464F00CAE5CC /* libMyScriptMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F463D05F1A40464F00CAE5CC /* libMyScriptMath.a */; };
+		F4F6E74A1ACC0192006F4D5A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F6E7491ACC0192006F4D5A /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		424F42DA1BD7AAB90069EF06 /* AtkMaw.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AtkMaw.bundle; sourceTree = "<group>"; };
+		42EBDEEF1BD79CEA00B886B7 /* add-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-btn.png"; sourceTree = "<group>"; };
+		42EBDEF01BD79CEA00B886B7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		42EBDEF11BD79CEA00B886B7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42EBDEF21BD79CEA00B886B7 /* archive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = archive.png; sourceTree = "<group>"; };
+		42EBDEF31BD79CEA00B886B7 /* camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-icon.png"; sourceTree = "<group>"; };
+		42EBDEF41BD79CEA00B886B7 /* classIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = classIcon.png; sourceTree = "<group>"; };
+		42EBDEF71BD79CEA00B886B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		42EBDEF81BD79CEA00B886B7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		42EBDEF91BD79CEA00B886B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		42EBDEFA1BD79CEA00B886B7 /* document.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = document.png; sourceTree = "<group>"; };
+		42EBDEFB1BD79CEA00B886B7 /* email-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email-icon.png"; sourceTree = "<group>"; };
+		42EBDEFC1BD79CEA00B886B7 /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		42EBDEFE1BD79CEA00B886B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42EBDEFF1BD79CEA00B886B7 /* file-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file-icon.png"; sourceTree = "<group>"; };
+		42EBDF001BD79CEA00B886B7 /* handwriting1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = handwriting1.jpg; sourceTree = "<group>"; };
+		42EBDF011BD79CEA00B886B7 /* home-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-icon.png"; sourceTree = "<group>"; };
+		42EBDF041BD79CEA00B886B7 /* image_sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_sample.jpg; sourceTree = "<group>"; };
+		42EBDF051BD79CEA00B886B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		42EBDF061BD79CEA00B886B7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42EBDF071BD79CEA00B886B7 /* multiple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multiple.png; sourceTree = "<group>"; };
+		42EBDF081BD79CEA00B886B7 /* printer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = printer.png; sourceTree = "<group>"; };
+		42EBDF0B1BD79CEA00B886B7 /* math-ak.res */ = {isa = PBXFileReference; lastKnownFileType = file; path = "math-ak.res"; sourceTree = "<group>"; };
+		42EBDF0C1BD79CEA00B886B7 /* math-grm-maw.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "math-grm-maw.def"; sourceTree = "<group>"; };
+		42EBDF0D1BD79CEA00B886B7 /* math-grm-maw.res */ = {isa = PBXFileReference; lastKnownFileType = file; path = "math-grm-maw.res"; sourceTree = "<group>"; };
+		42EBDF0E1BD79CEA00B886B7 /* Save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Save.png; sourceTree = "<group>"; };
+		42EBDF0F1BD79CEA00B886B7 /* sub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sub.png; sourceTree = "<group>"; };
+		42EBDF101BD79CEA00B886B7 /* Tablet Teacher-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tablet Teacher-Info.plist"; sourceTree = "<group>"; };
+		42EBDF121BD79CEA00B886B7 /* uploadWorksheet-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uploadWorksheet-icon.png"; sourceTree = "<group>"; };
+		42EBDF301BD79D0300B886B7 /* CreateWorksheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateWorksheetViewController.h; path = "Tablet Teacher/CreateWorksheetViewController.h"; sourceTree = "<group>"; };
+		42EBDF311BD79D0300B886B7 /* CreateWorksheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateWorksheetViewController.m; path = "Tablet Teacher/CreateWorksheetViewController.m"; sourceTree = "<group>"; };
+		42EBDF321BD79D0300B886B7 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = "Tablet Teacher/HomeViewController.h"; sourceTree = "<group>"; };
+		42EBDF331BD79D0300B886B7 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = "Tablet Teacher/HomeViewController.m"; sourceTree = "<group>"; };
+		42EBDF391BD79FFE00B886B7 /* Tablet Teacher-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tablet Teacher-Prefix.pch"; sourceTree = "<group>"; };
+		42EBDF3A1BD7A15E00B886B7 /* MyCertificate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCertificate.h; sourceTree = "<group>"; };
+		42F37C4D1BD0CBC40060497C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		42F37C7A1BD12AF40060497C /* ArchiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchiveViewController.h; sourceTree = "<group>"; };
+		42F37C7B1BD12AF40060497C /* ArchiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchiveViewController.m; sourceTree = "<group>"; };
+		42F37C7D1BD4B9030060497C /* SPUserResizableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUserResizableView.m; sourceTree = "<group>"; };
+		42F37C7E1BD4B9030060497C /* SPUserResizableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUserResizableView.h; sourceTree = "<group>"; };
+		42F37C831BD4C1400060497C /* QuestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
+		42F37C871BD4C3180060497C /* QuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionView.h; sourceTree = "<group>"; };
+		42F37C881BD4C3180060497C /* QuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionView.m; sourceTree = "<group>"; };
+		9297188A19D9A2250008F6AE /* libMyScript2D.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMyScript2D.a; path = ../../libs/sdk/libMyScript2D.a; sourceTree = "<group>"; };
+		9297188C19D9A2250008F6AE /* libMyScriptEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMyScriptEngine.a; path = ../../libs/sdk/libMyScriptEngine.a; sourceTree = "<group>"; };
+		9297189A19D9A2E80008F6AE /* libStylusCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libStylusCore.a; path = ../../libs/styluscore/libStylusCore.a; sourceTree = "<group>"; };
+		F43BA674177D93C6002F5330 /* Tablet Teacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tablet Teacher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44D16511785B15D0043785E /* AtkMaw.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtkMaw.framework; path = ../../libs/maw/AtkMaw.framework; sourceTree = "<group>"; };
+		F463D05F1A40464F00CAE5CC /* libMyScriptMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMyScriptMath.a; path = ../../libs/sdk/libMyScriptMath.a; sourceTree = "<group>"; };
+		F4F6E7491ACC0192006F4D5A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F43BA671177D93C6002F5330 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F6E74A1ACC0192006F4D5A /* SystemConfiguration.framework in Frameworks */,
+				F44D16521785B15D0043785E /* AtkMaw.framework in Frameworks */,
+				9297189219D9A2250008F6AE /* libMyScript2D.a in Frameworks */,
+				9297189419D9A2250008F6AE /* libMyScriptEngine.a in Frameworks */,
+				F463D0601A40464F00CAE5CC /* libMyScriptMath.a in Frameworks */,
+				9297189B19D9A2E80008F6AE /* libStylusCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42EBDEEE1BD79CEA00B886B7 /* Tablet Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				42EBDEEF1BD79CEA00B886B7 /* add-btn.png */,
+				42EBDEF01BD79CEA00B886B7 /* AppDelegate.h */,
+				42EBDEF11BD79CEA00B886B7 /* AppDelegate.m */,
+				42EBDEF21BD79CEA00B886B7 /* archive.png */,
+				42EBDEF31BD79CEA00B886B7 /* camera-icon.png */,
+				42EBDEF41BD79CEA00B886B7 /* classIcon.png */,
+				42EBDEF71BD79CEA00B886B7 /* Default-568h@2x.png */,
+				42EBDEF81BD79CEA00B886B7 /* Default.png */,
+				42EBDEF91BD79CEA00B886B7 /* Default@2x.png */,
+				42EBDEFA1BD79CEA00B886B7 /* document.png */,
+				42EBDEFB1BD79CEA00B886B7 /* email-icon.png */,
+				42EBDEFC1BD79CEA00B886B7 /* email.png */,
+				42EBDEFD1BD79CEA00B886B7 /* InfoPlist.strings */,
+				42EBDEFF1BD79CEA00B886B7 /* file-icon.png */,
+				42EBDF001BD79CEA00B886B7 /* handwriting1.jpg */,
+				42EBDF011BD79CEA00B886B7 /* home-icon.png */,
+				42EBDF041BD79CEA00B886B7 /* image_sample.jpg */,
+				42EBDF051BD79CEA00B886B7 /* Images.xcassets */,
+				42EBDF061BD79CEA00B886B7 /* main.m */,
+				42EBDF071BD79CEA00B886B7 /* multiple.png */,
+				42EBDF081BD79CEA00B886B7 /* printer.png */,
+				42EBDF091BD79CEA00B886B7 /* Resources */,
+				42EBDF0E1BD79CEA00B886B7 /* Save.png */,
+				42EBDF0F1BD79CEA00B886B7 /* sub.png */,
+				42EBDF101BD79CEA00B886B7 /* Tablet Teacher-Info.plist */,
+				42EBDF391BD79FFE00B886B7 /* Tablet Teacher-Prefix.pch */,
+				42EBDF121BD79CEA00B886B7 /* uploadWorksheet-icon.png */,
+			);
+			path = "Tablet Teacher";
+			sourceTree = "<group>";
+		};
+		42EBDF091BD79CEA00B886B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42EBDF0A1BD79CEA00B886B7 /* Recognition */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		42EBDF0A1BD79CEA00B886B7 /* Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				42EBDF0B1BD79CEA00B886B7 /* math-ak.res */,
+				42EBDF0C1BD79CEA00B886B7 /* math-grm-maw.def */,
+				42EBDF0D1BD79CEA00B886B7 /* math-grm-maw.res */,
+			);
+			path = Recognition;
+			sourceTree = "<group>";
+		};
+		F43BA66B177D93C6002F5330 = {
+			isa = PBXGroup;
+			children = (
+				42EBDF3A1BD7A15E00B886B7 /* MyCertificate.h */,
+				42EBDF301BD79D0300B886B7 /* CreateWorksheetViewController.h */,
+				42EBDF311BD79D0300B886B7 /* CreateWorksheetViewController.m */,
+				42EBDF321BD79D0300B886B7 /* HomeViewController.h */,
+				42EBDF331BD79D0300B886B7 /* HomeViewController.m */,
+				42F37C871BD4C3180060497C /* QuestionView.h */,
+				42F37C881BD4C3180060497C /* QuestionView.m */,
+				42F37C831BD4C1400060497C /* QuestionView.xib */,
+				42F37C7A1BD12AF40060497C /* ArchiveViewController.h */,
+				42F37C7B1BD12AF40060497C /* ArchiveViewController.m */,
+				42F37C7D1BD4B9030060497C /* SPUserResizableView.m */,
+				42F37C7E1BD4B9030060497C /* SPUserResizableView.h */,
+				42F37C4D1BD0CBC40060497C /* Main.storyboard */,
+				424F42DA1BD7AAB90069EF06 /* AtkMaw.bundle */,
+				42EBDEEE1BD79CEA00B886B7 /* Tablet Teacher */,
+				F43BA676177D93C6002F5330 /* Frameworks */,
+				F43BA675177D93C6002F5330 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F43BA675177D93C6002F5330 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F43BA674177D93C6002F5330 /* Tablet Teacher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F43BA676177D93C6002F5330 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9297188A19D9A2250008F6AE /* libMyScript2D.a */,
+				9297188C19D9A2250008F6AE /* libMyScriptEngine.a */,
+				F463D05F1A40464F00CAE5CC /* libMyScriptMath.a */,
+				9297189A19D9A2E80008F6AE /* libStylusCore.a */,
+				F44D16511785B15D0043785E /* AtkMaw.framework */,
+				F4F6E7491ACC0192006F4D5A /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F43BA673177D93C6002F5330 /* Tablet Teacher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F43BA691177D93C7002F5330 /* Build configuration list for PBXNativeTarget "Tablet Teacher" */;
+			buildPhases = (
+				F43BA670177D93C6002F5330 /* Sources */,
+				F43BA671177D93C6002F5330 /* Frameworks */,
+				F43BA672177D93C6002F5330 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tablet Teacher";
+			productName = MathWidgetSample;
+			productReference = F43BA674177D93C6002F5330 /* Tablet Teacher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F43BA66C177D93C6002F5330 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = MyScript;
+			};
+			buildConfigurationList = F43BA66F177D93C6002F5330 /* Build configuration list for PBXProject "Tablet Teacher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F43BA66B177D93C6002F5330;
+			productRefGroup = F43BA675177D93C6002F5330 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F43BA673177D93C6002F5330 /* Tablet Teacher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F43BA672177D93C6002F5330 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EBDF1C1BD79CEA00B886B7 /* document.png in Resources */,
+				42EBDF151BD79CEA00B886B7 /* archive.png in Resources */,
+				42F37C841BD4C1400060497C /* QuestionView.xib in Resources */,
+				42EBDF2F1BD79CEA00B886B7 /* uploadWorksheet-icon.png in Resources */,
+				42EBDF1F1BD79CEA00B886B7 /* InfoPlist.strings in Resources */,
+				42EBDF201BD79CEA00B886B7 /* file-icon.png in Resources */,
+				42EBDF161BD79CEA00B886B7 /* camera-icon.png in Resources */,
+				42EBDF2A1BD79CEA00B886B7 /* math-grm-maw.def in Resources */,
+				42EBDF1B1BD79CEA00B886B7 /* Default@2x.png in Resources */,
+				42EBDF1A1BD79CEA00B886B7 /* Default.png in Resources */,
+				42EBDF2D1BD79CEA00B886B7 /* sub.png in Resources */,
+				42EBDF271BD79CEA00B886B7 /* multiple.png in Resources */,
+				42EBDF241BD79CEA00B886B7 /* image_sample.jpg in Resources */,
+				42EBDF281BD79CEA00B886B7 /* printer.png in Resources */,
+				42EBDF251BD79CEA00B886B7 /* Images.xcassets in Resources */,
+				42EBDF2E1BD79CEA00B886B7 /* Tablet Teacher-Info.plist in Resources */,
+				42EBDF1D1BD79CEA00B886B7 /* email-icon.png in Resources */,
+				42EBDF171BD79CEA00B886B7 /* classIcon.png in Resources */,
+				42EBDF1E1BD79CEA00B886B7 /* email.png in Resources */,
+				42EBDF131BD79CEA00B886B7 /* add-btn.png in Resources */,
+				42EBDF2B1BD79CEA00B886B7 /* math-grm-maw.res in Resources */,
+				42EBDF2C1BD79CEA00B886B7 /* Save.png in Resources */,
+				424F42DB1BD7AAB90069EF06 /* AtkMaw.bundle in Resources */,
+				42EBDF291BD79CEA00B886B7 /* math-ak.res in Resources */,
+				42EBDF191BD79CEA00B886B7 /* Default-568h@2x.png in Resources */,
+				42F37C4E1BD0CBC40060497C /* Main.storyboard in Resources */,
+				42EBDF211BD79CEA00B886B7 /* handwriting1.jpg in Resources */,
+				42EBDF221BD79CEA00B886B7 /* home-icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F43BA670177D93C6002F5330 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F37C891BD4C3180060497C /* QuestionView.m in Sources */,
+				42EBDF341BD79D0300B886B7 /* CreateWorksheetViewController.m in Sources */,
+				42F37C7F1BD4B9030060497C /* SPUserResizableView.m in Sources */,
+				42EBDF141BD79CEA00B886B7 /* AppDelegate.m in Sources */,
+				42EBDF351BD79D0300B886B7 /* HomeViewController.m in Sources */,
+				42F37C7C1BD12AF40060497C /* ArchiveViewController.m in Sources */,
+				42EBDF261BD79CEA00B886B7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42EBDEFD1BD79CEA00B886B7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42EBDEFE1BD79CEA00B886B7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F43BA68F177D93C7002F5330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F43BA690177D93C7002F5330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F43BA692177D93C7002F5330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../libs/maw\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tablet Teacher/Tablet Teacher-Prefix.pch";
+				INFOPLIST_FILE = "Tablet Teacher/Tablet Teacher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../libs/styluscore/\"",
+					"\"$(SRCROOT)/../../libs/sdk/\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"/usr/lib/libstdc++.dylib",
+					"-Wl,-U,_MyScript2D",
+					"-Wl,-U,_MyScriptAnalyzer",
+					"-Wl,-U,_MyScriptDocument",
+					"-Wl,-U,_MyScriptGesture",
+					"-Wl,-U,_MyScriptInk",
+					"-Wl,-U,_MyScriptInkSearch",
+					"-Wl,-U,_MyScriptMath",
+					"-Wl,-U,_MyScriptMusic",
+					"-Wl,-U,_MyScriptPrediction",
+					"-Wl,-U,_MyScriptShape",
+					"-Wl,-U,_MyScriptText",
+					"-Wl,-U,_MyScriptWriterAdaptation",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myscript.atk.MathWidgetSample;
+				PRODUCT_NAME = "Tablet Teacher";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F43BA693177D93C7002F5330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../libs/maw\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tablet Teacher/Tablet Teacher-Prefix.pch";
+				INFOPLIST_FILE = "Tablet Teacher/Tablet Teacher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../libs/styluscore/\"",
+					"\"$(SRCROOT)/../../libs/sdk/\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"/usr/lib/libstdc++.dylib",
+					"-Wl,-U,_MyScript2D",
+					"-Wl,-U,_MyScriptAnalyzer",
+					"-Wl,-U,_MyScriptDocument",
+					"-Wl,-U,_MyScriptGesture",
+					"-Wl,-U,_MyScriptInk",
+					"-Wl,-U,_MyScriptInkSearch",
+					"-Wl,-U,_MyScriptMath",
+					"-Wl,-U,_MyScriptMusic",
+					"-Wl,-U,_MyScriptPrediction",
+					"-Wl,-U,_MyScriptShape",
+					"-Wl,-U,_MyScriptText",
+					"-Wl,-U,_MyScriptWriterAdaptation",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myscript.atk.MathWidgetSample;
+				PRODUCT_NAME = "Tablet Teacher";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F43BA66F177D93C6002F5330 /* Build configuration list for PBXProject "Tablet Teacher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F43BA68F177D93C7002F5330 /* Debug */,
+				F43BA690177D93C7002F5330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F43BA691177D93C7002F5330 /* Build configuration list for PBXNativeTarget "Tablet Teacher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F43BA692177D93C7002F5330 /* Debug */,
+				F43BA693177D93C7002F5330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F43BA66C177D93C6002F5330 /* Project object */;
+}
