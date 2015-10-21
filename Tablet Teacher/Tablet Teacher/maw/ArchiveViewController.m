@@ -9,6 +9,11 @@
 #import "ArchiveViewController.h"
 
 @interface ArchiveViewController ()
+{
+    UIButton *Assign;
+    UIButton *Tryout;
+    UIButton *Edit;
+}
 
 @end
 
@@ -27,22 +32,71 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)handleTapGesture:(UILongPressGestureRecognizer *)tapGesture {
+- (void)handleTapGesture:(UILongPressGestureRecognizer *)longpress {
     NSLog(@"tapGesture:");
-    [self becomeFirstResponder];
-    //    CGRect targetRectangle = self.tapView.frame;
-    CGRect targetRectangle = CGRectMake(100, 100, 300, 100);
-    [[UIMenuController sharedMenuController] setTargetRect:targetRectangle inView:self.view];
+    CGPoint location = [longpress locationInView:self.view];
+//    [self becomeFirstResponder];
+//    //    CGRect targetRectangle = self.tapView.frame;
+//    CGRect targetRectangle = CGRectMake(100, 100, 300, 100);
+//    [[UIMenuController sharedMenuController] setTargetRect:targetRectangle inView:self.view];
+//    
+//    UIMenuItem *Edit = [[UIMenuItem alloc] initWithTitle:@"Edit" action:@selector(customAction:)];
+//    UIMenuItem *Tryout = [[UIMenuItem alloc] initWithTitle:@"Tryout" action:@selector(customAction:)];
+//    UIMenuItem *Assign = [[UIMenuItem alloc] initWithTitle:@"Assign" action:@selector(customAction:)];
+//    
+//    [[UIMenuController sharedMenuController] setMenuItems:@[Edit,Tryout,Assign]];
+//    [[UIMenuController sharedMenuController] setMenuVisible:YES animated:YES];
     
-    UIMenuItem *Edit = [[UIMenuItem alloc] initWithTitle:@"Edit" action:@selector(customAction:)];
-    UIMenuItem *Tryout = [[UIMenuItem alloc] initWithTitle:@"Tryout" action:@selector(customAction:)];
-    UIMenuItem *Assign = [[UIMenuItem alloc] initWithTitle:@"Assign" action:@selector(customAction:)];
-    
-    [[UIMenuController sharedMenuController] setMenuItems:@[Edit,Tryout,Assign]];
-    [[UIMenuController sharedMenuController] setMenuVisible:YES animated:YES];
-    
+    if (longpress.state == UIGestureRecognizerStateBegan)
+    {
+        self.popUpViewController = [[UIViewController alloc] init];
+        self.popUpViewController.modalPresentationStyle = UIModalPresentationPopover;
+        
+        Edit = [UIButton buttonWithType:UIButtonTypeCustom];
+        [Edit addTarget:self action:@selector(EditBtnPressed) forControlEvents:UIControlEventTouchUpInside];
+        [Edit setTitle:@"Edit" forState:UIControlStateNormal];
+        [Edit setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [Edit setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+        Edit.frame = CGRectMake(10, 10,60 ,100);
+        
+        Assign = [UIButton buttonWithType:UIButtonTypeCustom];
+        //[Assign addTarget:self action:@selector(EditBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
+        [Assign setTitle:@"Assign" forState:UIControlStateNormal];
+        [Assign setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        Assign.frame = CGRectMake(Edit.frame.size.width +Edit.frame.origin.x + 20, 10,60 ,100);
+        
+        Tryout = [UIButton buttonWithType:UIButtonTypeCustom];
+        //[Tryout addTarget:self action:@selector(aMethod:) forControlEvents:UIControlEventTouchUpInside];
+        [Tryout setTitle:@"Tryout" forState:UIControlStateNormal];
+        [Tryout setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+
+        Tryout.frame = CGRectMake(Assign.frame.size.width + Assign.frame.origin.x + 20, 10,60 ,100);
+        
+        [self.popUpViewController.view addSubview:Edit];
+        [self.popUpViewController.view addSubview:Assign];
+        [self.popUpViewController.view addSubview:Tryout];
+        UIPopoverPresentationController * popOverController =  self.popUpViewController.popoverPresentationController;
+        [popOverController setDelegate:self];
+        self.popUpViewController.preferredContentSize = CGSizeMake(250, 100);
+        popOverController.sourceView = self.view;
+        popOverController.sourceRect = CGRectMake(location.x, location.y,100,100);
+        popOverController.permittedArrowDirections = UIPopoverArrowDirectionUp;
+        
+        [self presentViewController:self.popUpViewController
+                           animated:YES
+                         completion:nil];
+        
+    }
+    else if (longpress.state == UIGestureRecognizerStateEnded || longpress.state == UIGestureRecognizerStateCancelled || longpress.state == UIGestureRecognizerStateFailed)
+    {
+        
+    }
 
     
+}
+-(void)EditBtnPressed
+{
+    NSLog(@"Edit Btn Pressed");
 }
 
 - (BOOL)canBecomeFirstResponder {

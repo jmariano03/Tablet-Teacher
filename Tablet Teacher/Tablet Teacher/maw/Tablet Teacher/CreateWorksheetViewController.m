@@ -41,21 +41,8 @@
     [self.myScriptViewController didMoveToParentViewController:self];
 
     self.answerSquares = [NSMutableDictionary dictionary];
-    
     indexOfView= 0;
 
-    
-//    // (2) Create a second resizable view with a UIImageView as the content.
-//    CGRect imageFrame = CGRectMake(50, 200, 140, 70);
-//    SPUserResizableView *imageResizableView = [[SPUserResizableView alloc] initWithFrame:imageFrame];
-//    UIView *contenttView = [[UIView alloc] initWithFrame:gripFrame];
-//    [contenttView setBackgroundColor:[UIColor lightGrayColor]];
-//    imageResizableView.contentView = contenttView;
-//    imageResizableView.delegate = self;
-//    [self.view addSubview:imageResizableView];
-    
-
- 
     isUserDraggingAnswerBox = YES;
     isUserEnteringAnswerOnMyScript = NO;
 
