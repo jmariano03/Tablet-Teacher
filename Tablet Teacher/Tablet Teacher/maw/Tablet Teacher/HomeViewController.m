@@ -60,6 +60,14 @@ BOOL isLongTapViewIsOnScreen;
         self.studentInfoController = [[UIViewController alloc] init];
         self.studentInfoController.modalPresentationStyle = UIModalPresentationPopover;
         
+        UILabel *fromLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,0, 200,200)];
+
+        fromLabel.numberOfLines = 10;
+        fromLabel.text = @" Umer Afzal \n Summary: \n - Overall Grade \n Assigments";
+        
+        [self.studentInfoController.view addSubview:fromLabel];
+        //[self.studentInfoController.view addSubview:toLabel];
+        
         UIPopoverPresentationController * popOverController =  self.studentInfoController.popoverPresentationController;
         [popOverController setDelegate:self];
         popOverController.sourceView = self.view;
@@ -98,7 +106,7 @@ BOOL isLongTapViewIsOnScreen;
 
 -(void) addStudentInformationtoPopUpView:(CGPoint)location
 {
-    UILabel *fromLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,0, self.LongTapView.frame.size.width,30)];
+    UILabel *fromLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,0, 200,100)];
     UILabel *toLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,fromLabel.frame.size.height, self.LongTapView.frame.size.width,50)];
     toLabel.numberOfLines = 8;
     fromLabel.text = @" Umer Afzal";
