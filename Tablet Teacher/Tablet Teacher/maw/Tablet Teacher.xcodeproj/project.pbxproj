@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420CBADB1BD90EAF0037FA8D /* StudentHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CBADA1BD90EAF0037FA8D /* StudentHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		424F42DB1BD7AAB90069EF06 /* AtkMaw.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 424F42DA1BD7AAB90069EF06 /* AtkMaw.bundle */; settings = {ASSET_TAGS = (); }; };
+		424F42DD1BD8E6870069EF06 /* 765-default-avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 424F42DC1BD8E6870069EF06 /* 765-default-avatar.png */; settings = {ASSET_TAGS = (); }; };
 		42EBDF131BD79CEA00B886B7 /* add-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEEF1BD79CEA00B886B7 /* add-btn.png */; settings = {ASSET_TAGS = (); }; };
 		42EBDF141BD79CEA00B886B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EBDEF11BD79CEA00B886B7 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		42EBDF151BD79CEA00B886B7 /* archive.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEF21BD79CEA00B886B7 /* archive.png */; settings = {ASSET_TAGS = (); }; };
@@ -51,7 +53,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		420CBAD91BD90EAF0037FA8D /* StudentHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentHomeViewController.h; path = "Tablet Teacher/StudentHomeViewController.h"; sourceTree = "<group>"; };
+		420CBADA1BD90EAF0037FA8D /* StudentHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentHomeViewController.m; path = "Tablet Teacher/StudentHomeViewController.m"; sourceTree = "<group>"; };
 		424F42DA1BD7AAB90069EF06 /* AtkMaw.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AtkMaw.bundle; sourceTree = "<group>"; };
+		424F42DC1BD8E6870069EF06 /* 765-default-avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "765-default-avatar.png"; sourceTree = "<group>"; };
 		42EBDEEF1BD79CEA00B886B7 /* add-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-btn.png"; sourceTree = "<group>"; };
 		42EBDEF01BD79CEA00B886B7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42EBDEF11BD79CEA00B886B7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -123,6 +128,7 @@
 		42EBDEEE1BD79CEA00B886B7 /* Tablet Teacher */ = {
 			isa = PBXGroup;
 			children = (
+				424F42DC1BD8E6870069EF06 /* 765-default-avatar.png */,
 				42EBDEEF1BD79CEA00B886B7 /* add-btn.png */,
 				42EBDEF01BD79CEA00B886B7 /* AppDelegate.h */,
 				42EBDEF11BD79CEA00B886B7 /* AppDelegate.m */,
@@ -175,6 +181,8 @@
 		F43BA66B177D93C6002F5330 = {
 			isa = PBXGroup;
 			children = (
+				420CBAD91BD90EAF0037FA8D /* StudentHomeViewController.h */,
+				420CBADA1BD90EAF0037FA8D /* StudentHomeViewController.m */,
 				42EBDF3A1BD7A15E00B886B7 /* MyCertificate.h */,
 				42EBDF301BD79D0300B886B7 /* CreateWorksheetViewController.h */,
 				42EBDF311BD79D0300B886B7 /* CreateWorksheetViewController.m */,
@@ -293,6 +301,7 @@
 				42EBDF291BD79CEA00B886B7 /* math-ak.res in Resources */,
 				42EBDF191BD79CEA00B886B7 /* Default-568h@2x.png in Resources */,
 				42F37C4E1BD0CBC40060497C /* Main.storyboard in Resources */,
+				424F42DD1BD8E6870069EF06 /* 765-default-avatar.png in Resources */,
 				42EBDF211BD79CEA00B886B7 /* handwriting1.jpg in Resources */,
 				42EBDF221BD79CEA00B886B7 /* home-icon.png in Resources */,
 			);
@@ -310,6 +319,7 @@
 				42F37C7F1BD4B9030060497C /* SPUserResizableView.m in Sources */,
 				42EBDF141BD79CEA00B886B7 /* AppDelegate.m in Sources */,
 				42EBDF351BD79D0300B886B7 /* HomeViewController.m in Sources */,
+				420CBADB1BD90EAF0037FA8D /* StudentHomeViewController.m in Sources */,
 				42F37C7C1BD12AF40060497C /* ArchiveViewController.m in Sources */,
 				42EBDF261BD79CEA00B886B7 /* main.m in Sources */,
 			);
@@ -424,6 +434,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.myscript.atk.MathWidgetSample;
 				PRODUCT_NAME = "Tablet Teacher";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -465,6 +476,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.myscript.atk.MathWidgetSample;
 				PRODUCT_NAME = "Tablet Teacher";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

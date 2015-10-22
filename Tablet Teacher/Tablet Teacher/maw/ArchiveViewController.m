@@ -98,6 +98,46 @@
 {
     NSLog(@"Edit Btn Pressed");
 }
+- (IBAction)worksheetOneBtnPressed:(id)sender
+{
+        self.popUpViewController = [[UIViewController alloc] init];
+        self.popUpViewController.modalPresentationStyle = UIModalPresentationPopover;
+        
+        Edit = [UIButton buttonWithType:UIButtonTypeCustom];
+        [Edit addTarget:self action:@selector(EditBtnPressed) forControlEvents:UIControlEventTouchUpInside];
+        [Edit setTitle:@"Edit" forState:UIControlStateNormal];
+        [Edit setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        [Edit setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+        Edit.frame = CGRectMake(10, 10,60 ,100);
+        
+        Assign = [UIButton buttonWithType:UIButtonTypeCustom];
+        //[Assign addTarget:self action:@selector(EditBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
+        [Assign setTitle:@"Assign" forState:UIControlStateNormal];
+        [Assign setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        Assign.frame = CGRectMake(Edit.frame.size.width +Edit.frame.origin.x + 20, 10,60 ,100);
+        
+        Tryout = [UIButton buttonWithType:UIButtonTypeCustom];
+        //[Tryout addTarget:self action:@selector(aMethod:) forControlEvents:UIControlEventTouchUpInside];
+        [Tryout setTitle:@"Tryout" forState:UIControlStateNormal];
+        [Tryout setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        
+        Tryout.frame = CGRectMake(Assign.frame.size.width + Assign.frame.origin.x + 20, 10,60 ,100);
+        
+        [self.popUpViewController.view addSubview:Edit];
+        [self.popUpViewController.view addSubview:Assign];
+        [self.popUpViewController.view addSubview:Tryout];
+        UIPopoverPresentationController * popOverController =  self.popUpViewController.popoverPresentationController;
+        [popOverController setDelegate:self];
+        self.popUpViewController.preferredContentSize = CGSizeMake(250, 100);
+        popOverController.sourceView = self.view;
+        popOverController.sourceRect = CGRectMake(20,100,100,100);
+        popOverController.permittedArrowDirections = UIPopoverArrowDirectionUp;
+        
+        [self presentViewController:self.popUpViewController
+                           animated:YES
+                         completion:nil];
+
+}
 
 - (BOOL)canBecomeFirstResponder {
     return YES;

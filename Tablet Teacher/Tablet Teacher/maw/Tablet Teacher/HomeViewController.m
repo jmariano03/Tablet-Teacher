@@ -49,6 +49,9 @@ BOOL isLongTapViewIsOnScreen;
     }
 }
 
+- (IBAction)backToMainBtnPressed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 - (void)onPress:(UILongPressGestureRecognizer*)longpress
 {
@@ -59,7 +62,7 @@ BOOL isLongTapViewIsOnScreen;
     {
         self.studentInfoController = [[UIViewController alloc] init];
         self.studentInfoController.modalPresentationStyle = UIModalPresentationPopover;
-        
+        self.studentInfoController.preferredContentSize = CGSizeMake(200, 200);
         UILabel *fromLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,0, 200,200)];
 
         fromLabel.numberOfLines = 10;
