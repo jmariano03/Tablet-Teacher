@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QuestionView : UIView
-@property (strong, nonatomic) IBOutlet UILabel *firstValue;
-@property (strong, nonatomic) IBOutlet UILabel *secondValue;
-@property (strong, nonatomic) IBOutlet UILabel *operation;
+
+IB_DESIGNABLE @interface QuestionView : UIView
+@property (strong, nonatomic)IBInspectable IBOutlet UILabel *firstValue;
+@property (strong, nonatomic)IBInspectable IBOutlet UILabel *secondValue;
+@property (strong, nonatomic)IBInspectable IBOutlet UILabel *operation;
 @property (strong, nonatomic) IBOutlet UIView *QuestionView;
 
 @end

@@ -8,8 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		420CBADB1BD90EAF0037FA8D /* StudentHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CBADA1BD90EAF0037FA8D /* StudentHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		420CBAEB1BDA37F50037FA8D /* StudentAssigmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CBAEA1BDA37F50037FA8D /* StudentAssigmentViewController.m */; settings = {ASSET_TAGS = (); }; };
+		420CBAEE1BDB2FDB0037FA8D /* MGDrawingSlate.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CBAED1BDB2FDB0037FA8D /* MGDrawingSlate.m */; settings = {ASSET_TAGS = (); }; };
+		420CBAF21BDB4AC90037FA8D /* StudentAnswerBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CBAF11BDB4AC90037FA8D /* StudentAnswerBoxView.m */; settings = {ASSET_TAGS = (); }; };
 		424F42DB1BD7AAB90069EF06 /* AtkMaw.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 424F42DA1BD7AAB90069EF06 /* AtkMaw.bundle */; settings = {ASSET_TAGS = (); }; };
 		424F42DD1BD8E6870069EF06 /* 765-default-avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 424F42DC1BD8E6870069EF06 /* 765-default-avatar.png */; settings = {ASSET_TAGS = (); }; };
+		428D46511BDD1E5B0097F683 /* AssignmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428D46501BDD1E5B0097F683 /* AssignmentsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		428D46551BDD23EF0097F683 /* answer.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 428D46521BDD23EF0097F683 /* answer.jpeg */; settings = {ASSET_TAGS = (); }; };
+		428D46561BDD23EF0097F683 /* eraser.png in Resources */ = {isa = PBXBuildFile; fileRef = 428D46531BDD23EF0097F683 /* eraser.png */; settings = {ASSET_TAGS = (); }; };
+		428D46571BDD23EF0097F683 /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 428D46541BDD23EF0097F683 /* pencil.png */; settings = {ASSET_TAGS = (); }; };
+		428D46591BDD24C70097F683 /* pencil (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 428D46581BDD24C70097F683 /* pencil (1).png */; settings = {ASSET_TAGS = (); }; };
 		42EBDF131BD79CEA00B886B7 /* add-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEEF1BD79CEA00B886B7 /* add-btn.png */; settings = {ASSET_TAGS = (); }; };
 		42EBDF141BD79CEA00B886B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EBDEF11BD79CEA00B886B7 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		42EBDF151BD79CEA00B886B7 /* archive.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EBDEF21BD79CEA00B886B7 /* archive.png */; settings = {ASSET_TAGS = (); }; };
@@ -55,8 +63,21 @@
 /* Begin PBXFileReference section */
 		420CBAD91BD90EAF0037FA8D /* StudentHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentHomeViewController.h; path = "Tablet Teacher/StudentHomeViewController.h"; sourceTree = "<group>"; };
 		420CBADA1BD90EAF0037FA8D /* StudentHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentHomeViewController.m; path = "Tablet Teacher/StudentHomeViewController.m"; sourceTree = "<group>"; };
+		420CBAE91BDA37F50037FA8D /* StudentAssigmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentAssigmentViewController.h; path = "Tablet Teacher/StudentAssigmentViewController.h"; sourceTree = "<group>"; };
+		420CBAEA1BDA37F50037FA8D /* StudentAssigmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentAssigmentViewController.m; path = "Tablet Teacher/StudentAssigmentViewController.m"; sourceTree = "<group>"; };
+		420CBAEC1BDB2FDB0037FA8D /* MGDrawingSlate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGDrawingSlate.h; sourceTree = "<group>"; };
+		420CBAED1BDB2FDB0037FA8D /* MGDrawingSlate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGDrawingSlate.m; sourceTree = "<group>"; };
+		420CBAEF1BDB49BE0037FA8D /* StudentWritingCertificate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentWritingCertificate.h; sourceTree = "<group>"; };
+		420CBAF01BDB4AC90037FA8D /* StudentAnswerBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentAnswerBoxView.h; path = "Tablet Teacher/StudentAnswerBoxView.h"; sourceTree = "<group>"; };
+		420CBAF11BDB4AC90037FA8D /* StudentAnswerBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentAnswerBoxView.m; path = "Tablet Teacher/StudentAnswerBoxView.m"; sourceTree = "<group>"; };
 		424F42DA1BD7AAB90069EF06 /* AtkMaw.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AtkMaw.bundle; sourceTree = "<group>"; };
 		424F42DC1BD8E6870069EF06 /* 765-default-avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "765-default-avatar.png"; sourceTree = "<group>"; };
+		428D464F1BDD1E5B0097F683 /* AssignmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssignmentsViewController.h; sourceTree = "<group>"; };
+		428D46501BDD1E5B0097F683 /* AssignmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssignmentsViewController.m; sourceTree = "<group>"; };
+		428D46521BDD23EF0097F683 /* answer.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = answer.jpeg; sourceTree = "<group>"; };
+		428D46531BDD23EF0097F683 /* eraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eraser.png; sourceTree = "<group>"; };
+		428D46541BDD23EF0097F683 /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil.png; sourceTree = "<group>"; };
+		428D46581BDD24C70097F683 /* pencil (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pencil (1).png"; sourceTree = "<group>"; };
 		42EBDEEF1BD79CEA00B886B7 /* add-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-btn.png"; sourceTree = "<group>"; };
 		42EBDEF01BD79CEA00B886B7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42EBDEF11BD79CEA00B886B7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -128,6 +149,10 @@
 		42EBDEEE1BD79CEA00B886B7 /* Tablet Teacher */ = {
 			isa = PBXGroup;
 			children = (
+				428D46521BDD23EF0097F683 /* answer.jpeg */,
+				428D46581BDD24C70097F683 /* pencil (1).png */,
+				428D46531BDD23EF0097F683 /* eraser.png */,
+				428D46541BDD23EF0097F683 /* pencil.png */,
 				424F42DC1BD8E6870069EF06 /* 765-default-avatar.png */,
 				42EBDEEF1BD79CEA00B886B7 /* add-btn.png */,
 				42EBDEF01BD79CEA00B886B7 /* AppDelegate.h */,
@@ -181,9 +206,18 @@
 		F43BA66B177D93C6002F5330 = {
 			isa = PBXGroup;
 			children = (
+				428D464F1BDD1E5B0097F683 /* AssignmentsViewController.h */,
+				428D46501BDD1E5B0097F683 /* AssignmentsViewController.m */,
+				420CBAF01BDB4AC90037FA8D /* StudentAnswerBoxView.h */,
+				420CBAF11BDB4AC90037FA8D /* StudentAnswerBoxView.m */,
+				420CBAEC1BDB2FDB0037FA8D /* MGDrawingSlate.h */,
+				420CBAED1BDB2FDB0037FA8D /* MGDrawingSlate.m */,
+				420CBAE91BDA37F50037FA8D /* StudentAssigmentViewController.h */,
+				420CBAEA1BDA37F50037FA8D /* StudentAssigmentViewController.m */,
 				420CBAD91BD90EAF0037FA8D /* StudentHomeViewController.h */,
 				420CBADA1BD90EAF0037FA8D /* StudentHomeViewController.m */,
 				42EBDF3A1BD7A15E00B886B7 /* MyCertificate.h */,
+				420CBAEF1BDB49BE0037FA8D /* StudentWritingCertificate.h */,
 				42EBDF301BD79D0300B886B7 /* CreateWorksheetViewController.h */,
 				42EBDF311BD79D0300B886B7 /* CreateWorksheetViewController.m */,
 				42EBDF321BD79D0300B886B7 /* HomeViewController.h */,
@@ -276,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42EBDF1C1BD79CEA00B886B7 /* document.png in Resources */,
+				428D46551BDD23EF0097F683 /* answer.jpeg in Resources */,
 				42EBDF151BD79CEA00B886B7 /* archive.png in Resources */,
 				42F37C841BD4C1400060497C /* QuestionView.xib in Resources */,
 				42EBDF2F1BD79CEA00B886B7 /* uploadWorksheet-icon.png in Resources */,
@@ -298,11 +333,14 @@
 				42EBDF2B1BD79CEA00B886B7 /* math-grm-maw.res in Resources */,
 				42EBDF2C1BD79CEA00B886B7 /* Save.png in Resources */,
 				424F42DB1BD7AAB90069EF06 /* AtkMaw.bundle in Resources */,
+				428D46591BDD24C70097F683 /* pencil (1).png in Resources */,
+				428D46571BDD23EF0097F683 /* pencil.png in Resources */,
 				42EBDF291BD79CEA00B886B7 /* math-ak.res in Resources */,
 				42EBDF191BD79CEA00B886B7 /* Default-568h@2x.png in Resources */,
 				42F37C4E1BD0CBC40060497C /* Main.storyboard in Resources */,
 				424F42DD1BD8E6870069EF06 /* 765-default-avatar.png in Resources */,
 				42EBDF211BD79CEA00B886B7 /* handwriting1.jpg in Resources */,
+				428D46561BDD23EF0097F683 /* eraser.png in Resources */,
 				42EBDF221BD79CEA00B886B7 /* home-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,11 +352,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420CBAF21BDB4AC90037FA8D /* StudentAnswerBoxView.m in Sources */,
+				420CBAEB1BDA37F50037FA8D /* StudentAssigmentViewController.m in Sources */,
 				42F37C891BD4C3180060497C /* QuestionView.m in Sources */,
 				42EBDF341BD79D0300B886B7 /* CreateWorksheetViewController.m in Sources */,
 				42F37C7F1BD4B9030060497C /* SPUserResizableView.m in Sources */,
+				428D46511BDD1E5B0097F683 /* AssignmentsViewController.m in Sources */,
 				42EBDF141BD79CEA00B886B7 /* AppDelegate.m in Sources */,
 				42EBDF351BD79D0300B886B7 /* HomeViewController.m in Sources */,
+				420CBAEE1BDB2FDB0037FA8D /* MGDrawingSlate.m in Sources */,
 				420CBADB1BD90EAF0037FA8D /* StudentHomeViewController.m in Sources */,
 				42F37C7C1BD12AF40060497C /* ArchiveViewController.m in Sources */,
 				42EBDF261BD79CEA00B886B7 /* main.m in Sources */,
