@@ -288,7 +288,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="operation.text" value="-"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view hidden="YES" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKV-DG-jht" userLabel="FirstAnswerBox" customClass="StudentAnswerBoxView">
+                            <view hidden="YES" alpha="0.59999999999999998" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YKV-DG-jht" userLabel="FirstAnswerBox" customClass="StudentAnswerBoxView">
                                 <rect key="frame" x="86" y="158" width="100" height="70"/>
                                 <color key="backgroundColor" red="0.94199810606060608" green="0.94199810606060608" blue="0.94199810606060608" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -306,7 +306,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view hidden="YES" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zjw-jL-Q51" userLabel="SecondAnswerBox" customClass="StudentAnswerBoxView">
+                            <view hidden="YES" alpha="0.59999999999999998" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zjw-jL-Q51" userLabel="SecondAnswerBox" customClass="StudentAnswerBoxView">
                                 <rect key="frame" x="214" y="158" width="100" height="70"/>
                                 <color key="backgroundColor" red="0.94199810610000001" green="0.94199810610000001" blue="0.94199810610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -324,7 +324,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view hidden="YES" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qa3-8x-y4t" userLabel="ThirdAnswerBox" customClass="StudentAnswerBoxView">
+                            <view hidden="YES" alpha="0.59999999999999998" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qa3-8x-y4t" userLabel="ThirdAnswerBox" customClass="StudentAnswerBoxView">
                                 <rect key="frame" x="348" y="158" width="100" height="70"/>
                                 <color key="backgroundColor" red="0.94199810610000001" green="0.94199810610000001" blue="0.94199810610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -342,7 +342,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view hidden="YES" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvs-mI-JNs" userLabel="FourthAnswerBox" customClass="StudentAnswerBoxView">
+                            <view hidden="YES" alpha="0.59999999999999998" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zvs-mI-JNs" userLabel="FourthAnswerBox" customClass="StudentAnswerBoxView">
                                 <rect key="frame" x="480" y="158" width="100" height="70"/>
                                 <color key="backgroundColor" red="0.94199810610000001" green="0.94199810610000001" blue="0.94199810610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -586,18 +586,18 @@
                                 <exclude reference="8i1-wo-T9J"/>
                                 <exclude reference="XJJ-EY-wj5"/>
                                 <exclude reference="hCx-bk-DC9"/>
+                                <exclude reference="L6z-Ds-csZ"/>
+                                <exclude reference="ukf-TY-TfX"/>
+                                <exclude reference="j20-kX-o4a"/>
+                                <exclude reference="mfh-2u-37r"/>
+                                <exclude reference="Msv-3F-rmX"/>
                                 <exclude reference="Lcp-k3-ztS"/>
                                 <exclude reference="gpn-1e-Ik8"/>
                                 <exclude reference="xpD-wR-g2t"/>
-                                <exclude reference="L6z-Ds-csZ"/>
-                                <exclude reference="ukf-TY-TfX"/>
                                 <exclude reference="Mwe-fn-A6S"/>
                                 <exclude reference="XaA-Ay-lK0"/>
                                 <exclude reference="snt-CY-mvz"/>
                                 <exclude reference="wIt-Jy-D4J"/>
-                                <exclude reference="j20-kX-o4a"/>
-                                <exclude reference="mfh-2u-37r"/>
-                                <exclude reference="Msv-3F-rmX"/>
                                 <exclude reference="FUR-kO-CC2"/>
                                 <exclude reference="GON-b2-0AJ"/>
                                 <exclude reference="lao-bk-pbl"/>
@@ -615,18 +615,18 @@
                                 <include reference="8i1-wo-T9J"/>
                                 <include reference="XJJ-EY-wj5"/>
                                 <exclude reference="hCx-bk-DC9"/>
+                                <include reference="L6z-Ds-csZ"/>
+                                <exclude reference="ukf-TY-TfX"/>
+                                <include reference="j20-kX-o4a"/>
+                                <include reference="mfh-2u-37r"/>
+                                <include reference="Msv-3F-rmX"/>
                                 <include reference="Lcp-k3-ztS"/>
                                 <include reference="gpn-1e-Ik8"/>
                                 <include reference="xpD-wR-g2t"/>
-                                <include reference="L6z-Ds-csZ"/>
-                                <exclude reference="ukf-TY-TfX"/>
                                 <include reference="Mwe-fn-A6S"/>
                                 <include reference="XaA-Ay-lK0"/>
                                 <include reference="snt-CY-mvz"/>
                                 <include reference="wIt-Jy-D4J"/>
-                                <include reference="j20-kX-o4a"/>
-                                <include reference="mfh-2u-37r"/>
-                                <include reference="Msv-3F-rmX"/>
                                 <include reference="FUR-kO-CC2"/>
                                 <include reference="GON-b2-0AJ"/>
                                 <include reference="lao-bk-pbl"/>
@@ -934,6 +934,11 @@
                                     <constraint firstAttribute="width" constant="100" id="6WT-T6-7DH"/>
                                     <constraint firstAttribute="height" constant="70" id="Mkw-fN-a09"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="firstValue.text" value="4"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="secondValue.text" value="4"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="operation.text" value="-"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CfP-5L-FE9" userLabel="SecondQuestionView" customClass="QuestionView">
                                 <rect key="frame" x="20" y="218" width="100" height="70"/>
@@ -942,6 +947,11 @@
                                     <constraint firstAttribute="width" constant="100" id="n2j-2R-7eE"/>
                                     <constraint firstAttribute="height" constant="70" id="nMo-CV-sIu"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="firstValue.text" value="5"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="secondValue.text" value="1"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="operation.text" value="+"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfp-XA-oUb" userLabel="ThirdQuestionView" customClass="QuestionView">
                                 <rect key="frame" x="178" y="68" width="100" height="70"/>
@@ -950,6 +960,11 @@
                                     <constraint firstAttribute="height" constant="70" id="qFl-69-GyZ"/>
                                     <constraint firstAttribute="width" constant="100" id="yc4-po-Rdu"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="firstValue.text" value="10"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="secondValue.text" value="6"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="operation.text" value="-"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02Y-vT-cDc" userLabel="FourQuestionView" customClass="QuestionView">
                                 <rect key="frame" x="178" y="218" width="100" height="70"/>
@@ -958,6 +973,11 @@
                                     <constraint firstAttribute="width" constant="100" id="a7G-4g-GKX"/>
                                     <constraint firstAttribute="height" constant="70" id="jj6-L4-535"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="firstValue.text" value="9"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="secondValue.text" value="1"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="operation.text" value="+"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Lf-Gy-1l7" userLabel="FiveQuestionView" customClass="QuestionView">
                                 <rect key="frame" x="334" y="68" width="100" height="70"/>
@@ -966,6 +986,11 @@
                                     <constraint firstAttribute="height" constant="70" id="4N1-Qv-wm0"/>
                                     <constraint firstAttribute="width" constant="100" id="ENw-HA-ZNr"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="firstValue.text" value="2"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="secondValue.text" value="1"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="operation.text" value="+"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3F-Gm-Nid" userLabel="SixQuestionView" customClass="QuestionView">
                                 <rect key="frame" x="334" y="218" width="100" height="70"/>
@@ -974,6 +999,11 @@
                                     <constraint firstAttribute="height" constant="70" id="YRE-db-XE4"/>
                                     <constraint firstAttribute="width" constant="100" id="gTL-jU-gxy"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="firstValue.text" value="7"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="secondValue.text" value="2"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="operation.text" value="-"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVM-es-5ch" userLabel="SevenQuestionView" customClass="QuestionView">
                                 <rect key="frame" x="480" y="218" width="100" height="70"/>
@@ -982,6 +1012,11 @@
                                     <constraint firstAttribute="width" constant="100" id="brN-yo-sJB"/>
                                     <constraint firstAttribute="height" constant="70" id="zIi-nh-F2t"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="firstValue.text" value="4"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="secondValue.text" value="3"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="operation.text" value="-"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qEA-bk-kgl" userLabel="EightQuestionView" customClass="QuestionView">
                                 <rect key="frame" x="480" y="68" width="100" height="70"/>
@@ -990,6 +1025,11 @@
                                     <constraint firstAttribute="width" constant="100" id="1DA-R7-37F"/>
                                     <constraint firstAttribute="height" constant="70" id="LxX-bU-8gA"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="firstValue.text" value="9"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="secondValue.text" value="4"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="operation.text" value="+"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfC-zj-hqC">
                                 <rect key="frame" x="448" y="20" width="132" height="30"/>
@@ -1010,6 +1050,29 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EU-NZ-XVL">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Itc-jq-H3v"/>
+                                    <constraint firstAttribute="width" constant="70" id="pHR-hw-nLD"/>
+                                </constraints>
+                                <state key="normal" title="Complete"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Itc-jq-H3v"/>
+                                        <exclude reference="pHR-hw-nLD"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Itc-jq-H3v"/>
+                                        <include reference="pHR-hw-nLD"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="completeBtnPressed:" destination="MaK-nj-G4g" eventType="touchUpInside" id="SWx-1m-ELa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1039,10 +1102,31 @@
                             <constraint firstAttribute="trailingMargin" secondItem="jd5-JX-D2U" secondAttribute="trailing" constant="-20" id="loy-Ae-e4H"/>
                             <constraint firstItem="02Y-vT-cDc" firstAttribute="leading" secondItem="CfP-5L-FE9" secondAttribute="trailing" constant="58" id="uJQ-uM-Pjw"/>
                             <constraint firstItem="ZVM-es-5ch" firstAttribute="top" secondItem="qEA-bk-kgl" secondAttribute="bottom" constant="80" id="vLg-Uj-xJr"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="0EU-NZ-XVL" secondAttribute="leading" id="xIF-4h-S2y"/>
+                            <constraint firstItem="0EU-NZ-XVL" firstAttribute="top" secondItem="7cv-3r-zqc" secondAttribute="bottom" id="xXX-fR-y1a"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0EU-NZ-XVL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="xIF-4h-S2y"/>
+                                <exclude reference="xXX-fR-y1a"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="0EU-NZ-XVL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="xIF-4h-S2y"/>
+                                <include reference="xXX-fR-y1a"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Worksheets" image="document.png" id="yiF-oL-XuF"/>
                     <connections>
+                        <outlet property="completeButton" destination="0EU-NZ-XVL" id="SIV-eo-bnD"/>
                         <outlet property="holdWritingView" destination="jd5-JX-D2U" id="SXH-aq-N3e"/>
                         <outlet property="myScriptWritingView" destination="XBs-GC-X2K" id="CbY-Bw-ll6"/>
                     </connections>

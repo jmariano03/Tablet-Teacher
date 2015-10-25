@@ -25,6 +25,7 @@
 
 
 @implementation CreateWorksheetViewController
+static int numberOfAnswerBoxes;
 
 - (void)viewDidLoad {
 
@@ -40,8 +41,10 @@
     [self.myScriptWritingView addSubview:self.myScriptViewController.view];
     [self.myScriptViewController didMoveToParentViewController:self];
 
+    self.answers = [[NSMutableArray alloc] init];
     self.answerSquares = [NSMutableDictionary dictionary];
     indexOfView= 0;
+    numberOfAnswerBoxes = 0;
 
     isUserDraggingAnswerBox = YES;
     isUserEnteringAnswerOnMyScript = NO;
@@ -69,7 +72,26 @@
     
     [addButton addTarget:self action:@selector(AddQuestion) forControlEvents:UIControlEventTouchUpInside];
     [self.myScriptWritingView addSubview:addButton];
+    
+    [self setLabelInMyScriptView];
 
+}
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 0) {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
+}
+- (IBAction)completeBtnPressed:(id)sender {
+    
+    if (self.answers.count < 8) {
+        UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"Error" message:@"Please fill all the answer boxes." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        [alert show];
+    }
+    else
+    {
+        UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"Assignment" message:@"Worksheet updated successfully" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        [alert show];
+    }
 }
 
 -(void)viewDidLayoutSubviews
@@ -80,7 +102,7 @@
 -(void)showMyScriptWritingView
 {
     self.holdWritingView.hidden = YES;
-    [self setLabelInMyScriptView];
+
 }
 
 -(void) setLabelInMyScriptView
@@ -116,9 +138,7 @@
     
 }
 - (IBAction)insertZoneBtnPressed:(id)sender {
-    // (1) Create a user resizable view with a simple red background content view.
-    
-   
+    if (numberOfAnswerBoxes < 8) {
     isUserEnteringAnswerOnMyScript = NO;
     
     CGRect gripFrame = CGRectMake(50, 50, 140, 70);
@@ -129,9 +149,11 @@
     userResizableView.delegate = self;
     [userResizableView showEditingHandles];
     currentlyEditingView = userResizableView;
-    lastEditedView = userResizableView;
-    
-    [lastEditedView hideEditingHandles];
+        
+    if (lastEditedView != nil)
+    {
+        [lastEditedView hideEditingHandles];
+    }
     [self.answerSquares setObject:contentView forKey:[NSString stringWithFormat:@"%d",indexOfView]];
     indexOfView++;
     [self.view addSubview:userResizableView];
@@ -139,7 +161,19 @@
     UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideEditingHandles)];
     [gestureRecognizer setDelegate:self];
     [currentlyEditingView addGestureRecognizer:gestureRecognizer];
-    
+        
+        numberOfAnswerBoxes++;
+        if(numberOfAnswerBoxes == 8)
+        {
+            self.completeButton.userInteractionEnabled = YES;
+            self.completeButton.alpha= 1.0;
+        }
+    }
+    else
+    {
+        self.completeButton.userInteractionEnabled = YES;
+        self.completeButton.alpha= 1.0;
+    }
 }
 
 - (void)userResizableViewDidBeginEditing:(SPUserResizableView *)userResizableView {
@@ -202,6 +236,7 @@
                 else
                 {
                     QuestionAnswer = [userExpression integerValue];
+                    [self.answers addObject:[NSNumber numberWithDouble:QuestionAnswer]];
                     isUserEnteringAnswerOnMyScript = NO;
                      UILabel*  QuestionAnswerLabel = [[UILabel alloc]initWithFrame:CGRectMake(10,0,currentlyEditingView.frame.size.width-10, currentlyEditingView.frame.size.height)];
                     QuestionAnswerLabel.text = [NSString stringWithFormat:@"%d. %.f",QuestionNumber,QuestionAnswer];
@@ -311,6 +346,7 @@
 {
     NSLog(@"Start writing");
     fromLabel.hidden = YES;
+    [self.myScriptWritingView setNeedsDisplay];
     [self.myScriptWritingView layoutIfNeeded];
 }
 
