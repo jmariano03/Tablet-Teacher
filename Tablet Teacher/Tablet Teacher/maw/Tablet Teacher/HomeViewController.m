@@ -74,7 +74,7 @@ BOOL isLongTapViewIsOnScreen;
         UIPopoverPresentationController * popOverController =  self.studentInfoController.popoverPresentationController;
         [popOverController setDelegate:self];
         popOverController.sourceView = self.view;
-        popOverController.sourceRect = CGRectMake(location.x, location.y,200,100);
+        popOverController.sourceRect = CGRectMake(location.x-60, location.y-50,200,100);
         popOverController.permittedArrowDirections = UIPopoverArrowDirectionUp;
         
         [self presentViewController:self.studentInfoController

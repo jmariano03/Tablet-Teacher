@@ -50,12 +50,16 @@ static int numberOfAnswerBoxes;
     isUserEnteringAnswerOnMyScript = NO;
 
     // Create a Button to get Help
-    clearButton =  [UIButton buttonWithType:UIButtonTypeInfoDark ];
+    clearButton =  [[UIButton alloc] init];
+    [clearButton setTitle:@"clear" forState:UIControlStateNormal];
+    [clearButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     CGRect buttonRect = clearButton.frame;
+    buttonRect.size.height = 40;
+    buttonRect.size.width = 60;
     
     // CALCulate the bottom right corner
     buttonRect.origin.x = self.view.frame.size.width - buttonRect.size.width - 8;
-    buttonRect.origin.y = buttonRect.size.height - 8;
+    buttonRect.origin.y = buttonRect.size.height - 20;
     [clearButton setFrame:buttonRect];
     
     [clearButton addTarget:self.myScriptViewController action:@selector(clear) forControlEvents:UIControlEventTouchUpInside];
@@ -63,8 +67,12 @@ static int numberOfAnswerBoxes;
     
     
     // Create a Button to get Help
-    addButton =  [UIButton buttonWithType:UIButtonTypeContactAdd];
+    addButton =  [UIButton buttonWithType:UIButtonTypeCustom];
+    [addButton setTitle:@"enter answer" forState:UIControlStateNormal];
+    [addButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     CGRect addButtonRext = addButton.frame;
+    addButtonRext.size.height = 40;
+    addButtonRext.size.width = 125;
     // CALCulate the bottom right corner
     addButtonRext.origin.x = self.view.frame.size.width - addButtonRext.size.width - 8;
     addButtonRext.origin.y = self.myScriptWritingView.frame.size.height-addButtonRext.size.height - 20;

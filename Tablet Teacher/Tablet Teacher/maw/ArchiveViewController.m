@@ -23,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UILongPressGestureRecognizer *tapGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
     [self.worksheetTwoBtn addGestureRecognizer:tapGesture];
 }
 
@@ -32,7 +32,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)handleTapGesture:(UILongPressGestureRecognizer *)longpress {
+- (void)handleTapGesture:(UITapGestureRecognizer *)longpress {
     NSLog(@"tapGesture:");
     CGPoint location = [longpress locationInView:self.view];
 //    [self becomeFirstResponder];
@@ -47,8 +47,7 @@
 //    [[UIMenuController sharedMenuController] setMenuItems:@[Edit,Tryout,Assign]];
 //    [[UIMenuController sharedMenuController] setMenuVisible:YES animated:YES];
     
-    if (longpress.state == UIGestureRecognizerStateBegan)
-    {
+ 
         self.popUpViewController = [[UIViewController alloc] init];
         self.popUpViewController.modalPresentationStyle = UIModalPresentationPopover;
         
@@ -79,24 +78,23 @@
         [popOverController setDelegate:self];
         self.popUpViewController.preferredContentSize = CGSizeMake(250, 100);
         popOverController.sourceView = self.view;
-        popOverController.sourceRect = CGRectMake(location.x, location.y,100,100);
+        popOverController.sourceRect = CGRectMake(location.x-30, location.y-75,100,100);
         popOverController.permittedArrowDirections = UIPopoverArrowDirectionUp;
         
         [self presentViewController:self.popUpViewController
                            animated:YES
                          completion:nil];
-        
-    }
-    else if (longpress.state == UIGestureRecognizerStateEnded || longpress.state == UIGestureRecognizerStateCancelled || longpress.state == UIGestureRecognizerStateFailed)
-    {
-        
-    }
+}
 
+- (IBAction)worksheet2btnPressed:(id)sender {
+    
     
 }
+
 -(void)EditBtnPressed
 {
     NSLog(@"Edit Btn Pressed");
+    self.tabBarController.selectedViewController = [self.tabBarController.viewControllers lastObject];
 }
 - (IBAction)worksheetOneBtnPressed:(id)sender
 {
@@ -104,7 +102,7 @@
         self.popUpViewController.modalPresentationStyle = UIModalPresentationPopover;
         
         Edit = [UIButton buttonWithType:UIButtonTypeCustom];
-        [Edit addTarget:self action:@selector(EditBtnPressed) forControlEvents:UIControlEventTouchUpInside];
+        //[Edit addTarget:self action:@selector(EditBtnPressed) forControlEvents:UIControlEventTouchUpInside];
         [Edit setTitle:@"Edit" forState:UIControlStateNormal];
         [Edit setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
         [Edit setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
@@ -130,7 +128,7 @@
         [popOverController setDelegate:self];
         self.popUpViewController.preferredContentSize = CGSizeMake(250, 100);
         popOverController.sourceView = self.view;
-        popOverController.sourceRect = CGRectMake(20,100,100,100);
+        popOverController.sourceRect = CGRectMake(20,120,100,100);
         popOverController.permittedArrowDirections = UIPopoverArrowDirectionUp;
         
         [self presentViewController:self.popUpViewController

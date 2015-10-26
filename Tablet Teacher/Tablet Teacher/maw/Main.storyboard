@@ -45,7 +45,7 @@
                                     <constraint firstAttribute="height" constant="79" id="htF-zX-5Sx"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="765-default-avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="qPw-uT-UVg" userLabel="StudentImage">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="classIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="qPw-uT-UVg" userLabel="StudentImage">
                                 <rect key="frame" x="366" y="212" width="72" height="79"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVK-xN-Png">
@@ -119,6 +119,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRm-fn-SHV">
                                 <rect key="frame" x="175" y="185" width="100" height="30"/>
                                 <state key="normal" title="Worksheet 2"/>
+                                <connections>
+                                    <action selector="worksheet2btnPressed:" destination="7iv-ly-K1v" eventType="touchUpInside" id="0m2-zT-HzD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -690,7 +693,7 @@
                                 <color key="textColor" red="0.16081557982228659" green="0.70714962121212122" blue="0.064696679851530658" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post due Assignments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgI-hs-GXA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Past due Assignments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgI-hs-GXA">
                                 <rect key="frame" x="140" y="249" width="321" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Glr-fP-yWR"/>
@@ -1135,25 +1138,6 @@
             </objects>
             <point key="canvasLocation" x="147" y="1086"/>
         </scene>
-        <!--Camera Scan-->
-        <scene sceneID="Yql-2d-Lxt">
-            <objects>
-                <viewController id="p9K-RG-N6q" userLabel="Camera Scan" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0d2-Z4-Hcu"/>
-                        <viewControllerLayoutGuide type="bottom" id="f4w-Yg-cak"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DIa-aP-xVf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Camera Scan" image="camera-icon.png" id="9hJ-Ni-6mu"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hk2-9K-s6g" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="856" y="997"/>
-        </scene>
         <!--Home-->
         <scene sceneID="2sI-qo-jkC">
             <objects>
@@ -1198,13 +1182,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="classIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="SYU-kU-VLK" userLabel="StudentImageView">
-                                <rect key="frame" x="260" y="344" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="W9o-jO-VJi"/>
-                                    <constraint firstAttribute="height" constant="80" id="yro-7q-tJ1"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50G-2d-BPY">
                                 <rect key="frame" x="260" y="432" width="80" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1235,6 +1212,13 @@
                                     <action selector="backToMainBtnPressed:" destination="czj-K9-PtR" eventType="touchUpInside" id="mJF-fW-crO"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="765-default-avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="SYU-kU-VLK" userLabel="StudentImageView">
+                                <rect key="frame" x="260" y="344" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="W9o-jO-VJi"/>
+                                    <constraint firstAttribute="height" constant="80" id="yro-7q-tJ1"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1285,7 +1269,6 @@
                     <connections>
                         <segue destination="czj-K9-PtR" kind="relationship" relationship="viewControllers" id="ZPG-hV-SZ1"/>
                         <segue destination="7iv-ly-K1v" kind="relationship" relationship="viewControllers" id="G8N-s9-Rj7"/>
-                        <segue destination="p9K-RG-N6q" kind="relationship" relationship="viewControllers" id="6aR-Rr-bsw"/>
                         <segue destination="MaK-nj-G4g" kind="relationship" relationship="viewControllers" id="yAK-dl-9We"/>
                     </connections>
                 </tabBarController>
@@ -1317,7 +1300,6 @@
         <image name="add-btn.png" width="100" height="100"/>
         <image name="answer.jpeg" width="225" height="225"/>
         <image name="archive.png" width="35" height="35"/>
-        <image name="camera-icon.png" width="35" height="35"/>
         <image name="classIcon.png" width="139" height="126"/>
         <image name="document.png" width="35" height="35"/>
         <image name="eraser.png" width="256" height="256"/>

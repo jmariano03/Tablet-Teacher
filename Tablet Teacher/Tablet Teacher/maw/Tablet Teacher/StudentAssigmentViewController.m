@@ -44,8 +44,12 @@
     [drawingSlate addGestureRecognizer:tapGesture];
     [drawingSlate setAlpha:0.2];
     
-    addButton =  [UIButton buttonWithType:UIButtonTypeContactAdd];
+    addButton =  [UIButton buttonWithType:UIButtonTypeCustom];
+    [addButton setTitle:@"enter answer" forState:UIControlStateNormal];
+    [addButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     CGRect addButtonRext = addButton.frame;
+    addButtonRext.size.height = 40;
+    addButtonRext.size.width = 125;
     // CALCulate the bottom right corner
     addButtonRext.origin.x = self.view.frame.size.width - addButtonRext.size.width - 20;
     addButtonRext.origin.y = self.writingView.frame.size.height-addButtonRext.size.height - 70;
